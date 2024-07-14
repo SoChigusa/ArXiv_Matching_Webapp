@@ -19,5 +19,5 @@ export async function GET(request: Request) {
   const userId = searchParams.get('userId') || '';
   const index = parseInt(searchParams.get('index') || '0', 10);
   const content = cache[userId]?.html[index] || '';
-  return NextResponse.json({ html: content, index, numContents: cache[userId]?.numConte });
+  return NextResponse.json({ html: content, index });
 }

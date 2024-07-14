@@ -33,9 +33,6 @@ export default function RootLayout({
         <link rel="stylesheet" type="text/css" media="screen" href="https://arxiv.org/static/browse/0.3.4/css/arXiv.css?v=20230622" />
         <link rel="stylesheet" type="text/css" media="print" href="https://arxiv.org/static/browse/0.3.4/css/arXiv-print.css?v=20200611" />
         <link rel="stylesheet" type="text/css" media="screen" href="https://arxiv.org/static/browse/0.3.4/css/browse_search.css" />
-        <script src="https://arxiv.org/static/browse/0.3.4/js/accordion.js"></script>
-        <script src="https://arxiv.org/static/browse/0.3.4/js/mathjaxToggle.min.js" type="text/javascript"></script>
-        <script type="text/javascript">mathjaxToggle();</script>
       </head>
 
       <body className="with-cu-identity">
