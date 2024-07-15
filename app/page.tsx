@@ -1,10 +1,18 @@
 // app/page.tsx
 "use client"
 
+import React from 'react';
 import { useEffect, useState } from "react";
+import { MathJax, MathJaxContext } from 'better-react-mathjax';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ThumbDownIcon from '@mui/icons-material/ThumbDown';
 import { Box, IconButton } from "@mui/material";
+
+const mathjaxConfig = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+  },
+};
 
 interface PageProps {
   searchParams: {
@@ -15,7 +23,7 @@ interface PageProps {
 const HomePage: React.FC<PageProps> = ({ searchParams }) => {
   const { userId } = searchParams;
   const [htmlContent, setHtmlContent] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(-1);
   const [selections, setSelections] = useState<number[]>([]);
   const [isLastContent, setIsLastContent] = useState(false);
 
@@ -68,7 +76,11 @@ const HomePage: React.FC<PageProps> = ({ searchParams }) => {
             <ThumbDownIcon />
           </IconButton>
         </Box>)}
-      <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+      <MathJaxContext config={mathjaxConfig}>
+        <MathJax key={currentIndex}>
+          <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+        </MathJax>
+      </MathJaxContext>
     </>
   );
 };
