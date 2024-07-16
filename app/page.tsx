@@ -72,7 +72,7 @@ const HomePage: React.FC<PageProps> = ({ searchParams }) => {
           <IconButton onClick={() => handleSelection(1)} color="primary">
             <ThumbUpIcon />
           </IconButton>
-          <IconButton onClick={() => handleSelection(2)} color="primary">
+          <IconButton onClick={() => handleSelection(0)} color="primary">
             <ThumbDownIcon />
           </IconButton>
         </Box>)}
