@@ -21,18 +21,10 @@ export default function RootLayout({
   return (
     <html>
       <head>
-        <title>High Energy Physics - Phenomenology</title>
+        <title>Paper Matching</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="apple-touch-icon" sizes="180x180" href="https://arxiv.org/static/browse/0.3.4/images/icons/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="https://arxiv.org/static/browse/0.3.4/images/icons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="https://arxiv.org/static/browse/0.3.4/images/icons/favicon-16x16.png" />
-        <link rel="manifest" href="https://arxiv.org/static/browse/0.3.4/images/icons/site.webmanifest" />
-        <link rel="mask-icon" href="https://arxiv.org/static/browse/0.3.4/images/icons/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="msapplication-TileColor" content="#2c53da" />
         <meta name="theme-color" content="#ffffff" />
-        <link rel="stylesheet" type="text/css" media="screen" href="https://arxiv.org/static/browse/0.3.4/css/arXiv.css?v=20230622" />
-        <link rel="stylesheet" type="text/css" media="print" href="https://arxiv.org/static/browse/0.3.4/css/arXiv-print.css?v=20200611" />
-        <link rel="stylesheet" type="text/css" media="screen" href="https://arxiv.org/static/browse/0.3.4/css/browse_search.css" />
       </head>
 
       <body className="with-cu-identity">
@@ -43,7 +35,9 @@ export default function RootLayout({
             <div id="header" className="is-hidden-mobile">
               <a aria-hidden="true" href="{{url_path('ignore_me')}}"></a>
               <div className="header-breadcrumbs">
-                <a href="https://arxiv.org/"><img src="https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-one-color-white.svg" alt="arxiv logo" style={{ height: "40px" }} /></a> <span>&gt;</span>
+                {/* <a href="https://arxiv.org/"><img src="https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-one-color-white.svg" alt="arxiv logo" style={{ height: "40px" }} /></a> */}
+                <h2>Paper Matching</h2>
+                <span>&gt;</span>
                 <a href="https://arxiv.org/list/hep-ph/recent">hep-ph</a>
               </div>
             </div>
