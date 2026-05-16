@@ -4,6 +4,41 @@
   margin-bottom: 20px;
 }
 
+/* Styles for DatePicker */
+
+/* Customize the dropdown container */
+.react-datepicker__header {
+  position: relative;
+}
+
+/* Customize the year dropdown */
+.react-datepicker__year-dropdown-container {
+  position: absolute;
+  top: 10px;
+  /* Adjust as needed */
+  right: 80px;
+  /* Adjust as needed */
+}
+
+/* Customize the month dropdown */
+.react-datepicker__month-dropdown-container {
+  position: absolute;
+  top: 10px;
+  /* Adjust as needed */
+  right: 10px;
+  /* Adjust as needed */
+}
+
+/* Additional custom styles if needed */
+.react-datepicker__year-select,
+.react-datepicker__month-select {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 1rem;
+}
+
 /****************************************
  *   General rules
  *****************************************/
